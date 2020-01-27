@@ -1,0 +1,377 @@
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Pacifico",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+
+.g-card {
+  margin: 20px;
+
+}
+
+
+
+.g-card-image {
+  border-radius: 10px;
+  width: 300px;
+  height: 480px;
+  box-shadow: 0px 0px 3px 1px #ccc;
+  
+}
+
+
+.g-card-info {
+  margin-top: 10px;
+  min-height: 100px;
+  
+}
+
+
+.g-card-title {
+  font-size: 24px;
+  margin: 0px;
+}
+
+
+.g-card-sub-title {
+  font-size: 16px;
+  margin: 0px;
+}
+
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: auto;
+}
+
+.social-links i {
+  color: rgb(7, 6, 6);
+  font-size: 2em;
+  padding: 5px;
+}
+
+.p-0{
+  font-weight: bold;
+  font-size: 15px;
+  color: grey;
+}
+
+
+.nav-link {
+  color: rgb(24, 6, 6);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+.nav-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(8, 2, 2);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.nav-link:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+.avatar {
+  height: 250px;
+  padding-top: 2em;
+}
+
+
+ 
+.container h4 {
+  font-weight: bolder;
+  color: rgb(94, 93, 89);
+  font-family: 'Raleway';
+  padding-top: 20px;
+}
+
+.phone {
+
+  position: absolute;
+  left: 900px;
+  top: 250px;
+  color: grey;
+  
+}
+
+.contact-list {
+color: rgb(114, 111, 111);
+font-weight: lighter;
+}
+
+
+.phone h2{
+  font-weight: bold;
+  font-size: 30px;
+  color: rgb(82, 81, 81);
+  padding-left: 21px;
+}
+.mail h5 {
+  font-size: 30px;
+  color:rgb(82, 81, 81);
+  font-weight: bolder;
+  padding-left: 13px;
+}
+.mail {
+  padding-top: 60px;
+}
+
+
+
+.sendbutton{
+display:inline-block;
+padding:0.3em 1.2em;
+
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#FFFFFF;
+background-color:#024268;
+text-align:center;
+transition: all 0.2s;
+  }
+  .sendbutton:hover{
+color:#f5f6f7;
+opacity: 0.8;
+  }
+  @media all and (max-width:30em){
+   .sendbutton{
+display:block;
+margin:0.2em auto;
+}
+}
+
+.contact-tg h7{
+  font-weight: bolder;
+  font-size: 80px;
+}
+.resume-tg h8 {
+  font-weight: bolder;
+  font-size: 80px;
+}
+
+.download-pdf button {
+  color: #fff !important;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ed3330;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  }
+
+  .download-pdf button:hover {
+    background: #434343;
+    letter-spacing: 1px;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
+    }
+
+.download-pdf {
+  padding-top: 50px;
+  left:800px;
+  position: fixed;
+}
+
+.education-content {
+padding-bottom: 10px;
+padding-top: 50px;
+}
+
+.education-content h2 {
+  padding-bottom: 25px;
+  font-weight: bold;
+  color: rgb(82, 81, 81);
+  
+  }
+.container h2 {
+font-weight: bold;
+color: rgb(82, 81, 81);
+padding-bottom: 20px;
+text-align: left;
+}
+
+.jumbotron-fluid h1 {
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(165, 162, 155); }
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+.content-p {
+padding-bottom: 100px;
+}
+
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+.info {
+  animation-name: bounce;
+  transform-origin: center bottom;
+  position: absolute;
+  left: 780px;
+  top: 180px;
+  width: 300px;
+}
+
+.card {
+  background-color: transparent;
+  width: 300px;
+  height: 380px;
+  perspective: 1000px; 
+  box-shadow: rgb(0, 0, 0);
+  
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+.flip-card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+  padding-top: 100px;
+}
+
+.git-button {
+display :inline-block;
+padding:0.35em 1.2em;
+border:0.1em solid white;
+margin:0 0.3em 0.3em 0;
+border-radius:2em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color: white;
+text-align:center;
+transition: all 0.2s;
+background-color: black;
+}
+.git-button:hover{
+color:#ffffff;
+background-color:#FFFFFF;
+  }
+ @media all and (max-width:30em) {
+  .git-button{
+display:block;
+margin:0.4em auto;
+}
+}
+
+.flip-card-front p{
+  padding-top: 30px;
+font-weight: lighter;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.container{
+  padding-bottom: 50px;
+}
+.about-me h6{
+  font-weight: bolder;
+  font-size: 80px;
+  padding-top: 10px;
+  padding-bottom: 14px;
+}
+
